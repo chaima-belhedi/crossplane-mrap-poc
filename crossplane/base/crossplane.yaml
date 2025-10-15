@@ -57,6 +57,8 @@ spec:
             - --enable-usages
             - --enable-ssa-claims
             - --enable-webhooks
+            - --tls-server-secret-name=""
+            - --tls-client-secret-name=""
           tls:
             enabled: false   
           metrics:
