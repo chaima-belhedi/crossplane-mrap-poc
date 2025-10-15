@@ -54,8 +54,6 @@ spec:
           args:
             - core
             - start
-            - --enable-usages
-            - --enable-ssa-claims
             - --enable-webhooks=false 
             - --metrics-port=8080
             - --health-probe-port=8081
