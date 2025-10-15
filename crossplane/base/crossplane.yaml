@@ -49,11 +49,9 @@ spec:
       serviceAccountName: crossplane
       containers:
         - name: crossplane
-          image: crossplane/crossplane:v1.19.1
+          image: crossplane/crossplane:v1.20.1
           command: ["crossplane"]
           args:
             - core
             - start
             - --leader-election 
-            - --webhook-enabled=false 
-            - --enable-in-cluster-config
