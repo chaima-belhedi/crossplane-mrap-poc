@@ -52,5 +52,7 @@ spec:
           image: crossplane/crossplane:v1.20.1
           command: ["crossplane"]
           args: ["core", "start", 
-                 "--enable-usages", 
-                 "--enable-ssa-claims"]
+                "--enable-usages", 
+                "--enable-ssa-claims",
+                "--disable-webhook",
+                "--disable-admission-controller"]
