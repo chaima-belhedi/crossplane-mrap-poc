@@ -59,5 +59,6 @@ spec:
             - --enable-webhooks
             - --metrics-port=8080
             - --health-probe-port=8081
+            - --insecure-skip-server-cert-verify 
           ports:
             - containerPort: 8080
