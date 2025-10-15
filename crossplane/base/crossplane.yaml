@@ -55,3 +55,4 @@ spec:
             - core
             - start
             - --leader-election 
+            - --insecure-no-tls
