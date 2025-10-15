@@ -59,7 +59,5 @@ spec:
             - --enable-webhooks
             - --metrics-port=8080
             - --health-probe-port=8081
-            - --tls-server-certs-dir=/tmp # dummy path
-            - --tls-client-certs-dir=/tmp # dummy path
           ports:
             - containerPort: 8080
