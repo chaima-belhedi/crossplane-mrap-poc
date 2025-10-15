@@ -1,0 +1,312 @@
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-terraform
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-terraform
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+        spec:
+          containers:
+            - name: package-runtime
+              #args: ['-d', '--poll=1m', '--max-reconcile-rate=100']
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-dns
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-dns
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+        spec:
+          containers:
+            - name: package-runtime
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-family-gcp
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-family-gcp
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+        spec:
+          containers:
+            - name: package-runtime
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-artifact
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-artifact
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+        spec:
+          containers:
+            - name: package-runtime
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-cloudplatform
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-cloudplatform
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+        spec:
+          containers:
+            - name: package-runtime
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-compute
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-compute
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+        spec:
+          containers:
+            - name: package-runtime
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-container
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-container
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+        spec:
+          containers:
+            - name: package-runtime
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-storage
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-storage
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+        spec:
+          containers:
+            - name: package-runtime
+
+
+
+
+
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gitlab
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gitlab
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+        spec:
+          containers:
+            - name: package-runtime
+          imagePullSecrets:
+            - name: crossplane-pull-only-secret
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-github
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-github
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+        spec:
+          containers:
+            - name: package-runtime
+              args: ['--poll=1m', '--max-reconcile-rate=100']
+          imagePullSecrets:
+            - name: crossplane-pull-only-secret
+
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-iam
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-iam
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-workflows
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-workflows
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-cloudrun
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-cloudrun
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-pubsub
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-pubsub
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-logging
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-logging
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-eventarc
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-eventarc
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-gcp-secretmanager
+spec:
+
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-gcp-secretmanager
+      template:
+        metadata:
+          labels:
+            app: upbound-provider
+---
+apiVersion: pkg.crossplane.io/v1beta1
+kind: DeploymentRuntimeConfig
+metadata:
+  name: upbound-provider-harbor
+spec:
+  deploymentTemplate:
+    spec:
+      selector:
+        matchLabels:
+          pkg.crossplane.io/provider: provider-harbor
+      template:
+        metadata:
+          labels:
+            app: upbound-provider

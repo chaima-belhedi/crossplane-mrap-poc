@@ -1,0 +1,245 @@
+# upbound provider-family-gcp
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-family-gcp
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-family-gcp:v1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-family-gcp
+---
+# upbound provider-gcp-artifact
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-artifact
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-artifact:v1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-artifact
+---
+# upbound provider-gcp-cloudplatform
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-cloudplatform
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-cloudplatform:v1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-cloudplatform
+---
+# upbound provider-gcp-container
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-container
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-container:v1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-container
+---
+# upbound provider-gcp-dns
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-dns
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-dns:v1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-dns
+---
+# upbound provider-gcp-storage
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-storage
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-storage:v1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-storage
+---
+# upbound provider-gcp-compute
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-compute
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-compute:v1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-compute
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-workflows
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-workflows:v2.0.1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-workflows
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-cloudrun
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-cloudrun:v2.0.1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-cloudrun
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-pubsub
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-pubsub:v2.0.1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-pubsub
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-logging
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-logging:v2.0.1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-logging
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-eventarc
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-eventarc:v2.0.1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-eventarc
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gcp-secretmanager
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-gcp-secretmanager:v2.0.1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gcp-secretmanager
+---
+# upbound provider-terraform
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-terraform
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/upbound/provider-terraform:v0.19.0
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-terraform
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-gitlab
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/crossplane-contrib/provider-gitlab:v0.10.4
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-gitlab
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-github
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/crossplane-contrib/provider-upjet-github:v0.18.0
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-github
+---
+apiVersion: pkg.crossplane.io/v1
+kind: Provider
+metadata:
+  name: upbound-provider-harbor
+spec:
+  ignoreCrossplaneConstraints: false
+  package: xpkg.upbound.io/globallogicuki/provider-harbor:v0.2.3
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
+  skipDependencyResolution: false
+  runtimeConfigRef:
+    name: upbound-provider-harbor
