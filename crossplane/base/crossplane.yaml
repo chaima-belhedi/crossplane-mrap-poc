@@ -55,4 +55,4 @@ spec:
             - core
             - start
             - --leader-election 
-            - --enable-webhooks=false 
+            - --disable-webhooks=false 
