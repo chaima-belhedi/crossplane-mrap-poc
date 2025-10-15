@@ -8,16 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/chaima-belhedi/crossplane-mrap-poc.git'
     targetRevision: main
-    path: '.'  # repo root
-    helm_charts:
-      crossplane:
-        version: v1.20.1
-    helm:
-        args:
-          - --enable-usages
-          - --enable-ssa-claims
-        metrics:
-          enabled: true
+    path: 'crossplane/base'
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: crossplane-system
