@@ -57,7 +57,6 @@ spec:
             - --enable-usages
             - --enable-ssa-claims
             - --enable-webhooks
-            - --disable-admission-controller
             - --metrics-port=8080
             - --health-probe-port=8081
             - --tls-server-certs-dir=/tmp # dummy path
