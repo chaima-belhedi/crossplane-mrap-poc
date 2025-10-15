@@ -53,6 +53,8 @@ spec:
           args:
             - core
             - start
+            - --tls-cert-file=/tls/tls.crt
+            - --tls-private-key-file=/tls/tls.key
           volumeMounts:
             - name: tls
               mountPath: /tls
