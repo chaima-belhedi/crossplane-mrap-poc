@@ -56,3 +56,4 @@ spec:
             - start
             - --leader-election 
             - --webhook-enabled=false 
+            - --enable-in-cluster-config
