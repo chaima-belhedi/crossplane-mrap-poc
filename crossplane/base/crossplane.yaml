@@ -54,4 +54,5 @@ spec:
           args:
             - core
             - start
+            - --leader-election 
             - --enable-webhooks=false 
