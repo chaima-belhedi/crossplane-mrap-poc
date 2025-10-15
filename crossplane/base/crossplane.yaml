@@ -56,9 +56,8 @@ spec:
             - start
             - --enable-usages
             - --enable-ssa-claims
-            - --enable-webhooks
+            - --enable-webhooks=false 
             - --metrics-port=8080
             - --health-probe-port=8081
-            - --insecure-skip-server-cert-verify 
           ports:
             - containerPort: 8080
