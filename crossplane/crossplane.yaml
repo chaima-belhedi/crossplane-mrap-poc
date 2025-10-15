@@ -56,10 +56,10 @@ spec:
             - --tls-cert-file=/tls/tls.crt
             - --tls-private-key-file=/tls/tls.key
           volumeMounts:
-            - name: tls
-              mountPath: /tls
+            - name: tls-client
+              mountPath: /tls/client
               readOnly: true
       volumes:
-        - name: tls
+        - name: tls-client
           secret:
-            secretName: crossplane-tls
+            secretName: crossplane-tls-client

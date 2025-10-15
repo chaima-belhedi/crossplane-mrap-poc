@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/chaima-belhedi/crossplane-mrap-poc.git'
     targetRevision: main
-    path: 'crossplane/base'
+    path: 'crossplane'
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: crossplane-system
