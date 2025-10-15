@@ -9,11 +9,10 @@ spec:
     repoURL: 'https://github.com/chaima-belhedi/crossplane-mrap-poc.git'
     targetRevision: main
     path: '.'  # repo root
+    helm_charts:
+      crossplane:
+        version: v1.20.1
     helm:
-      releaseName: crossplane
-      values: |
-        image:
-          tag: v1.20.1    # baseline version
         args:
           - --enable-usages
           - --enable-ssa-claims
