@@ -57,9 +57,10 @@ spec:
             - --enable-usages
             - --enable-ssa-claims
             - --enable-webhooks
-            - --tls-server-secret-name=""
-            - --tls-client-secret-name=""
-          tls:
-            enabled: false   
-          metrics:
-            enabled: true
+            - --disable-admission-controller
+            - --metrics-port=8080
+            - --health-probe-port=8081
+            - --tls-server-certs-dir=/tmp # dummy path
+            - --tls-client-certs-dir=/tmp # dummy path
+          ports:
+            - containerPort: 8080
