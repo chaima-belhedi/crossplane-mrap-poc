@@ -50,7 +50,7 @@ spec:
       containers:
         - name: crossplane
           image: crossplane/crossplane:v1.20.1
-          args:
-            - --enable-usages
-            - --enable-ssa-claims
- 
+          command: ["crossplane"]
+          args: ["core", "start", 
+                 "--enable-usages", 
+                 "--enable-ssa-claims"]
